@@ -3,6 +3,12 @@ package com.appslab;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello AppsLab 2020! haa");
-    }
-}
+        double height=0.2;
+        double length=0.5;
+        double tower=100;
+
+        double totalDistance=height*length*tower;
+        System.out.println(totalDistance);
+
+        }
+        }
