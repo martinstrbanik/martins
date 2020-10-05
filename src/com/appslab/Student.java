@@ -1,32 +1,18 @@
 package com.appslab;
 
 public class Student {
-        private String name;
-        private int studentNumber;
+    String name;
+    int studentNumber;
 
-        public Student() {
-
-        }
-
-    public Student(String name, int studentNumber) {
-        this.name = name;
-        this.studentNumber = studentNumber;
-    }
-
-    public String getName() {
+    public String getName(){
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getStudentNumber() {
+    public int getStudentNumber(){
         return studentNumber;
     }
 
-    public void setStudentNumber(int studentNumber) {
-        this.studentNumber = studentNumber;
-    }
-}
 
+
+
+}
