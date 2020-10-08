@@ -3,6 +3,6 @@ package com.appslab;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello AppsLab 2020! haa");
+        Employee emp1 = new Employee("Jozko","Mrkvicka",4.7.1990, "IT programmer" );
     }
 }
