@@ -16,6 +16,7 @@ public class Main {
         list.add(5);
 
         out(list);
+        getEvenNumbers(list);
         addIfNotExists(1,list);
         addIfNotExists(6,list);
         addIfNotExists(14,list);
@@ -52,6 +53,15 @@ public class Main {
             if(list.get(i)%2==0){
                 list.remove(i);
                 i--;
+            }
+        }
+    }
+
+    static void getEvenNumbers(ArrayList<Integer>list){
+        System.out.println("List of even numbers:");
+        for(int i=0;i<list.size();i++){
+            if(list.get(i)%2==0){
+                System.out.println(list.get(i));
             }
         }
     }
