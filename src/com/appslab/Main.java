@@ -49,12 +49,7 @@ public class Main {
 
     static void evenNumberDelete(ArrayList<Integer>list){
         System.out.println("Deleting even numbers...");
-        for(int i=0;i<list.size();i++){
-            if(list.get(i)%2==0){
-                list.remove(i);
-                i--;
-            }
-        }
+        list.removeIf(n->(n%2==0));
     }
 
     static void getEvenNumbers(ArrayList<Integer>list){
