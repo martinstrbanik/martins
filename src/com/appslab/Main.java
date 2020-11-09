@@ -54,11 +54,7 @@ public class Main {
 
     static void getEvenNumbers(ArrayList<Integer>list){
         System.out.println("List of even numbers:");
-        for(int i=0;i<list.size();i++){
-            if(list.get(i)%2==0){
-                System.out.println(list.get(i));
-            }
-        }
+        list.stream().filter(n->(n%2==0)).forEach(System.out::println);
     }
 
 
