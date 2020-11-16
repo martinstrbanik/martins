@@ -1,20 +1,30 @@
 package com.appslab;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] a;
-        multiplyByLength(new int[5]);
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(9);
+        list.add(5);
+        list.add(4);
+        list.add(11);
+        list.add(6);
+
+        System.out.println(multiplyByLength(list));
+
+    }
+
+    public static List<Integer> multiplyByLength(ArrayList<Integer> list){
+
+        return list.stream().map(i -> i * list.size())
+                .collect(Collectors.toList());
+
+
     }
 
 
-    public static int multiplyByLength(int[] a){
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        numbers.add(a);
-        System.out.println(numbers);
-        return 0;
-    }
 }
